@@ -1,0 +1,99 @@
+:root {
+    --bg-color: #f5f5f5f5;
+    --text-color: #6c757d;
+    --accent-color: #ffd333;
+    --contrast-color: #3d454d;
+}
+
+
+/* ===================   общие правила  ================ */
+
+html,
+body {
+    height: 100%;
+    /* задаем высоту тега по всей высоте отображаемой страницы*/
+}
+
+body {
+    min-width: 320px;
+    /*задаем минимальную ширину элементу по ширине самого маленького мобильного устройства*/
+    font-family: 'Roboto', sans-serif;
+    /*подключаем ипортированный шрифт*/
+    background-color: var(--bg-color);
+    color: var(--text-color)
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main.main {
+    /*обращаемся к тегу main с классом main */
+    flex: 1 1 auto;
+    /*параметры данного стиля это сокращеные от flex-grow, flex-shrink и flex-basis. Первая 1 - даем нашему элементу все 100% предоставляемого пространства для контента,
+						вторая единичка определяет фактор сжатия элемента, свойство авто - размер по основной оси, ось у нас вертикальная, так как для wrapper мы задали column*/
+}
+
+
+
+/* ===================   общие правила  ================ */
+
+
+
+/* ===================   правила для header  ================ */
+
+ul.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+
+}
+
+ul.social-icons a {
+    background-color: var(--accent-color);
+    color: var(--contrast-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    transition: all .3s;
+
+}
+
+
+ul.social-icons a:hover{
+    background-color:var(--contrast-color) ;
+    color: var(--accent-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================   правила для header  ================ */
